@@ -1,0 +1,134 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("img.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.blur {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  width: 320px;
+  height: 420px;
+  color: white;
+  background-color: rgba(146, 146, 147, 0.253);
+  border: solid gray 1px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+.blur:hover {
+  border: solid rgba(255, 255, 255, 0.676) 1px;
+}
+.heading {
+  font-size: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: center;
+  line-height: 35px;
+}
+input {
+  font-family: "Space Grotesk", sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#to,
+#from {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.5rem;
+  height: 8vh;
+  background-color: transparent;
+  color: white;
+  border: solid gray 1px;
+  outline: none;
+
+  border-radius: 20px;
+  appearance: none;
+  font-family: "Space Grotesk", sans-serif;
+  padding-left: 50px;
+}
+#to option,
+#from option {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.to,
+.from {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7vw;
+  height: 7vh;
+  margin: 0;
+  margin-right: 180px;
+  position: absolute;
+
+  overflow: hidden;
+}
+.flag-img {
+  width: 80%;
+  height: 80%;
+}
+.to-currency,
+.from-currency {
+  width: 10rem;
+  height: 8vh;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.089);
+  border: solid gray 1px;
+  outline: none;
+  margin: 5px;
+  border-radius: 20px;
+
+
+}
+.refresh {
+  background-color: transparent;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: solid gray 1px;
+  outline: none;
+  font-family: "Space Grotesk", sans-serif;
+  margin-top: 10px;
+  transition: all ease-in-out 0.3s;
+}
+.refresh:hover {
+  padding: 10px 35px;
+}
+.refresh:active {
+  border: solid white 1px;
+}
+.to-amount,
+.from-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-currency::-webkit-inner-spin-button,
+.to-currency::-webkit-outer-spin-button,
+.from-currency::-webkit-inner-spin-button,
+.from-currency::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+}
+
+

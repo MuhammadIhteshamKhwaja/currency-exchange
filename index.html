@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRENCY CONVERTER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="blur">
+        <h2 class="heading">CURRENCY <br> CONVERTER</h2>
+        <div>
+
+
+            <form>
+
+                <div class="drop-down">
+                    <div class="from">
+                        <div class="flag">
+                        <img class="flag-img"  src="https://hatscripts.github.io/circle-flags/flags/us.svg" />
+                        </div>
+                        <select name="From" id="from">
+                         </select>
+                        </div>
+                        <div class="from-amount">
+                            <input class="from-currency" value="1" type="number">
+                            
+                        </div>
+                        
+                    
+                    <div class="to">
+                        <div class="flag">
+                            <img class="flag-img" src="https://hatscripts.github.io/circle-flags/flags/pk.svg" />
+                            </div>
+                        <select name="To" id="to">
+                            
+                            
+                        </select>
+                    </div>
+                    <div class="to-amount">
+
+                        <input class="to-currency" value="1" type="number">
+                    </div>
+                    
+                </div>
+                
+            </form>
+        </div>
+        <button class="refresh">Refresh</button>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="exchange.js"></script>
+
+</body>
+
+</html>
